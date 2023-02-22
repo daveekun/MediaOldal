@@ -1,0 +1,95 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.scrollParent{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    background-image: url("./bckground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.scrollChild{
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box{
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height:60vh;
+    width: 45vw;
+    position: relative;
+    top: 20vh;
+}
+.boxLeft{
+    border-top-right-radius: 10vw;
+    border-bottom-right-radius: 10vw;
+    float: left;
+}
+.boxRight{
+    border-top-left-radius: 10vw;
+    border-bottom-left-radius: 10vw;
+    float: right;
+}
+.boxCreator{
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height:60vh;
+    width: 20vw;
+    position: relative;
+    top: 20vh;
+}
+ul{
+    list-style: none;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+li{
+    padding: 2% 5%;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 5vh;
+}
+.boxContent{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+audio{
+    width: 70%;
+}
+#ujsag{
+    margin-top:-10%;
+    border-radius: 10px;
+}
+video{
+    border-radius: 10px;
+}
+#instapost{
+    margin-top:-15%;
+    width: 100%;
+    height: 100%;
+    margin-right: -25%;    
+}
+#braindamage{
+    margin-top:-10%;
+}
+
